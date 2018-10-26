@@ -86,6 +86,10 @@ function addToArray(item) {
   globalArr.push(item);
 }
 
+function random(min, max) {
+  return Math.floor(Math.random() * min) + max;
+}
+
 // pure function
 
 function pureAddToArray(arr, item) {
