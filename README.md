@@ -14,6 +14,7 @@ The two most common programming paradigms and examples of each:
     * Ruby
     * C#
 
+JavaScript is a mutliparadigm language. It allows us to write code that is functional, object oriented, or both. In fact, it's most common to use a mixture of paradigms in building our full scale web applications.
 
 ### Functional Foundations
 
