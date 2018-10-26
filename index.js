@@ -5,15 +5,28 @@
  ***/
 
 const arr = [1, 2, 3, 4];
+const sameArr = arr;
+
 const obj = { name: 'Jeff' };
+const sameObj = obj;
 
 // Array Copies
 const arrSlice = arr.slice();
 const arrSpread = [...arr];
 
+arr === sameArr; // true
+arrSlice === arr; // false
+arrSpread === arr; // flase
+arrSlice === arrSpread; // false
+
 // Object Copies
 const objAssign = Object.assign({}, obj);
 const objSpread = { ...obj };
+
+obj === sameObj; // true
+objAssign === obj; // false
+objSpread === obj; // false
+objAssign === objSpread; // false
 
 /***
  *
@@ -34,4 +47,29 @@ const num1 = addTen(10);
 const num2 = addTwenty(num1);
 
 // with composition
-const final = addTwenty(addTen(10));
+const final = addTwenty(addTen(10)); // 40
+
+/***
+ *
+ * Currying
+ *
+ ***/
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+const curry = (fn, ...args) =>
+  fn.length <= args.length
+    ? fn(...args)
+    : (...more) => curry(fn, ...args, ...more);
+
+const addCurry = curry(add);
+
+const added = addCurry(10)(10); // 20
+
+/***
+ *
+ * Functional Purity
+ *
+ ***/
