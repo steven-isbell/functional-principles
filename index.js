@@ -73,3 +73,21 @@ const added = addCurry(10)(10); // 20
  * Functional Purity
  *
  ***/
+
+// impure functions
+
+let globalArr = [];
+
+function logger(value) {
+  console.log(value);
+}
+
+function addToArray(item) {
+  globalArr.push(item);
+}
+
+// pure function
+
+function pureAddToArray(arr, item) {
+  return [...arr, item];
+}
