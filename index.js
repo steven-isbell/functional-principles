@@ -16,7 +16,7 @@ const arrSpread = [...arr];
 
 arr === sameArr; // true
 arrSlice === arr; // false
-arrSpread === arr; // flase
+arrSpread === arr; // false
 arrSlice === arrSpread; // false
 
 // Object Copies
