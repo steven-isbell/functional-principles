@@ -59,6 +59,8 @@ function add(num1, num2) {
   return num1 + num2;
 }
 
+// We can curry functions that need to accept arguments at a later time, trimming down on the number of functions we need to write.
+
 const curry = (fn, ...args) =>
   fn.length <= args.length
     ? fn(...args)
