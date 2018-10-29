@@ -24,12 +24,17 @@ While writing our application in a functional way provides many benefits, an app
 
 The goal of functional programming is to make your application less error-prone, easier to reason about, easier to debug, and more efficient. To understand how we achieve that, we'll look at some of the foundational concepts of functional programming and what they provide us.
 
-* Immutability
-* Referential Transparency
-* Composition
-* Currying
 * Functional Purtiy
     * No side effects
     * Same input generates same output
+* Immutability
+    * Predictability
+        * Immutability encourages the creation of data, rather than the destruction of exisiting structures.
+        * This means that when you're moving data structures around, passing them to different functions or scopes, you're never changing the original structure.
+        * It focuses on understanding the flow of data over time which makes our data predicatable and trackable. This is called Mutation Tracking.
+    * Performance
+* Referential Transparency
+* Composition
+* Currying
 
 To see examples, checkout the `index.js` file.
