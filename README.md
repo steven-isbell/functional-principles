@@ -30,9 +30,12 @@ The goal of functional programming is to make your application less error-prone,
 * Immutability
     * Predictability
         * Immutability encourages the creation of data, rather than the destruction of exisiting structures.
-        * This means that when you're moving data structures around, passing them to different functions or scopes, you're never changing the original structure.
+        * This means that when you're moving data structures around, passing them to different functions or scopes, you're never changing the original structure and only passing copies.
         * It focuses on understanding the flow of data over time which makes our data predicatable and trackable. This is called Mutation Tracking.
+        * By using copies of structures, we also avoid side effects, keeping our functions pure.
+        * JavaScript is incredibly flexible and allows you to change values on the fly from anywhere that has access to it's reference. This is also one of the primary causes of bugs. `Why did that value change??` With immutability, we limit the scope for `what` changed a value and `why` it was changed.
     * Performance
+        * In many cases, immutability can improve the performance of your application by taking advantage of `shared data structures`
 * Referential Transparency
 * Composition
 * Currying
