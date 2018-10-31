@@ -40,6 +40,9 @@ The goal of functional programming is to make your application less error-prone,
         * Its important to note that rarely is your executable JavaScript code the bottleneck in your application.
 * Referential Transparency
     * Referential Transparency is the ability of an expression to be replaced with it's return value and not change the result of the program.
+    * Referential Transparency implies that there can be no side effects. If we have a method with a return value, that also logs something to the console, we couldn't replace the method with it's return value in the application because we'd lose the console log.
+    * Additionally, if the output of our function is different for a similar input, we could not have the predictability that our program would exectue the same way.
+    * Referential Transparency is a clear sign that you are writing functional code because it doesn't allow for side effects and requires that the return value be predictable.
 * Composition
 * Currying
 
