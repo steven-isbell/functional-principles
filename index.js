@@ -97,3 +97,9 @@ function random(min, max) {
 function pureAddToArray(arr, item) {
   return [...arr, item];
 }
+
+/***
+ *
+ * Referential Transparency
+ *
+ ***/

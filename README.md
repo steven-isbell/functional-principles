@@ -35,8 +35,11 @@ The goal of functional programming is to make your application less error-prone,
         * By using copies of structures, we also avoid side effects, keeping our functions pure.
         * JavaScript is incredibly flexible and allows you to change values on the fly from anywhere that has access to it's reference. This is also one of the primary causes of bugs. `Why did that value change??` With immutability, we limit the scope for `what` changed a value and `why` it was changed.
     * Performance
-        * In many cases, immutability can improve the performance of your application by taking advantage of `shared data structures`
+        * One downside to immutability is the consumption of memory. Mutable data allows memory to be reused and repurposed. Immutable data does not.
+        * With modern computing capabilities, this has become much less of a problem.
+        * Its important to note that rarely is your executable JavaScript code the bottleneck in your application.
 * Referential Transparency
+    * Referential Transparency is the ability of an expression to be replaced with it's return value and not change the result of the program.
 * Composition
 * Currying
 
