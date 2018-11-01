@@ -54,5 +54,3 @@ The goal of functional programming is to make your application less error-prone,
 * Currying
 
 To see examples, checkout the `index.js` file.
-
-// ADD GARRETT"S SUGGESTIONS
