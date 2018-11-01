@@ -44,6 +44,15 @@ The goal of functional programming is to make your application less error-prone,
     * Additionally, if the output of our function is different for a similar input, we could not have the predictability that our program would exectue the same way.
     * Referential Transparency is a clear sign that you are writing functional code because it doesn't allow for side effects and requires that the return value be predictable.
 * Composition
+    * Functional Composition is the pattern of composing (combining) at least two functions into a new function.
+    * Each function should accept a single input and generate a single output.
+    * You can think of them as items in a recipe that creates a functional application.
+    * The purpose of composition is to provide a clean, easy to read, and reusable set of functions that can be combined to perform as needed logical tasks.
+    * If you're familiar with the array prototype methods offered in JavaScript, composition operates in a similar way.
+        * A method that returns a single item that can then be passed into the wrapping function.
+        * The functions are resolved from inner function to outer function until the final return statement is called.
 * Currying
 
 To see examples, checkout the `index.js` file.
+
+// ADD GARRETT"S SUGGESTIONS
