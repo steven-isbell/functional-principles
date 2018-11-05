@@ -47,10 +47,14 @@ The goal of functional programming is to make your application less error-prone,
     * Functional Composition is the pattern of composing (combining) at least two functions into a new function.
     * Each function should accept a single input and generate a single output.
     * You can think of them as items in a recipe that creates a functional application.
-    * The purpose of composition is to provide a clean, easy to read, and reusable set of functions that can be combined to perform as needed logical tasks.
+    * The purpose of composition is to provide a clean, easy to read, and reusable set of functions or utilities that can be combined to perform as needed logical tasks.
     * If you're familiar with the array prototype methods offered in JavaScript, composition operates in a similar way.
         * A method that returns a single item that can then be passed into the wrapping function.
         * The functions are resolved from inner function to outer function until the final return statement is called.
+        * Ultimately, this allows us to treat our functions more as utilities that transform our data, rather than statements that describe our program.
 * Currying
-
+    * Currying is a process that takes a function, and allows us to break it down into a series of functions.
+        * This means that if we have a function that expects 3 arguments, and we pass it 1 or 2 arguments, it will accept those, and generate a new function that we can invoke with the 3rd argument at a later date.
+        * It accomplishes this pattern through creating a closure, or a lexically scoped module that retains access to the previously created function.
+        * Currying allows us to have a function that we can invoke at different points in our runtime by allowing us to pass in arguments when they become available.
 To see examples, checkout the `index.js` file.
