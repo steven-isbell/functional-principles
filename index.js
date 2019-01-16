@@ -98,6 +98,12 @@ function pureAddToArray(arr, item) {
   return [...arr, item];
 }
 
+const immutableObj = {name: 'Jeff'};
+
+function noMutationsPlease() {
+  
+}
+
 /***
  *
  * Referential Transparency
