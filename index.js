@@ -59,7 +59,8 @@ function add(num1, num2) {
   return num1 + num2;
 }
 
-// We can curry functions that need to accept arguments at a later time, trimming down on the number of functions we need to write.
+// We can curry functions that need to accept arguments at a later time,
+// trimming down on the number of functions we need to write.
 
 const curry = (fn, ...args) =>
   fn.length <= args.length
@@ -115,3 +116,28 @@ function noMutationsPlease(obj) {
  * Referential Transparency
  *
  ***/
+
+// Non-Transparent Function
+
+let total = 1;
+
+function add(num) {
+  return (total += num);
+}
+
+// 6      // 11
+add(5) === add(5);
+
+// If this were a transparent function,
+// we would have a consistent output of add(5),
+// and replace the function call with it's result
+// to get
+
+// Transparent Function
+
+function add(num1, num2) {
+  return (num1 += num2);
+}
+
+// 3          // 3
+add(1, 2) === add(1, 2);

@@ -24,7 +24,7 @@ While writing our application in a functional way provides many benefits, an app
 
 The goal of functional programming is to make your application less error-prone, easier to reason about, easier to debug, and more efficient. To understand how we achieve that, we'll look at some of the foundational concepts of functional programming and what they provide us.
 
-## Functional Purtiy
+## Functional Purity
 * No side effects
     * The only visible effect of a function is it's return value.
     * Doesn't rely on state outside of it's scope, meaning that we pass arguments, or declare variables, into the functions scope that it will need to use. This makes sure that the function will work the same way every time.
