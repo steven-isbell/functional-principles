@@ -78,7 +78,8 @@ const added = addCurry(10)(10); // 20
 
 // impure functions
 
-let globalArr = [];
+const globalArr = [];
+const immutableObj = { name: 'Jeff' };
 
 function logger(value) {
   console.log(value);
@@ -92,16 +93,21 @@ function random(min, max) {
   return Math.floor(Math.random() * min) + max;
 }
 
-// pure function
+function mutationsPlease() {
+  immutableObj.name = 'Karl';
+  return immutableObj;
+}
+
+// pure functions
 
 function pureAddToArray(arr, item) {
   return [...arr, item];
 }
 
-const immutableObj = {name: 'Jeff'};
-
-function noMutationsPlease() {
-  
+function noMutationsPlease(obj) {
+  const copy = { ...obj };
+  copy.name = 'Karl';
+  return copy;
 }
 
 /***
