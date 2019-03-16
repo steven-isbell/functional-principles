@@ -136,7 +136,7 @@ add(5) === add(5);
 // Transparent Function
 
 function add(num1, num2) {
-  return (num1 += num2);
+  return num1 + num2;
 }
 
 // 3          // 3
